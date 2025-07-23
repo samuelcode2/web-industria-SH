@@ -39,7 +39,7 @@ html {
 }
 
 body {
-     color: #666666;
+     color: #9da19d;/* cambia el color del parrafo de servicios y de productos*/
      font-size: 14px;
      font-family: 'Poppins', sans-serif;
      line-height: 1.80857;
@@ -223,7 +223,7 @@ button {
 .loader_bg {
      position: fixed;
      z-index: 9999999;
-     background: #fff;
+     background: #ffffff;
      width: 100%;
      height: 100%;
 }
@@ -838,4 +838,120 @@ ul.location_icon li a {
 .position_head .glasses,
 .shop {
      margin-bottom: 90px;
+}
+/*agregado por mi*/
+/* Puedes añadir esto a tu archivo tu_estilo.css 
+.card {
+    border: none; /* Eliminar el borde por defecto de la tarjeta */
+    transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Efecto de levantamiento al pasar el mouse */
+}
+
+.card-title {
+    font-weight: 600;
+    color: #333;
+}/*
+/* --- NUEVOS ESTILOS RECOMENDADOS PARA style.css --- */
+
+/* Estilos generales para la sección de servicios */
+.shop {
+    background-color: #f8f9fa; /* Un fondo suave para la sección */
+    padding: 60px 0; /* Espaciado arriba y abajo */
+}
+
+/* Estilos para el título principal de la sección */
+.shop .titlepage h2 {
+    font-size: 2.5rem; /* Tamaño de fuente más grande */
+    color: #343a40; /* Color oscuro para el texto */
+    font-weight: 700; /* Negrita */
+    margin-bottom: 20px; /* Espacio debajo del título */
+    text-align: center; /* Centra el título por defecto */
+}
+
+/* Alineación del título en pantallas grandes */
+@media (min-width: 768px) {
+    .shop .titlepage h2 {
+        text-align: left; /* Alinea a la izquierda en pantallas grandes */
+    }
+}
+
+/* Estilos para los párrafos de la sección */
+.shop .titlepage p {
+    font-size: 1.1rem; /* Tamaño de fuente legible */
+    line-height: 1.6; /* Interlineado para mejor lectura */
+    color: #555; /* Color de texto más suave */
+}
+
+/* Estilos para el encabezado "Lo que Ofrecemos" */
+.shop h3 {
+    font-size: 1.8rem;
+    color: #495057;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    text-align: center; /* Centra el subtítulo por defecto */
+}
+
+@media (min-width: 768px) {
+    .shop h3 {
+        text-align: left; /* Alinea a la izquierda en pantallas grandes */
+    }
+}
+
+
+/* Estilos para la lista de servicios */
+.shop .service-list {
+    list-style: none; /* Quita las viñetas por defecto de la lista */
+    padding-left: 0; /* Quita el padding por defecto de la lista */
+}
+
+.shop .service-list li {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #444;
+    margin-bottom: 10px; /* Espacio entre los ítems de la lista */
+    display: flex; /* Para alinear el ícono y el texto */
+    align-items: flex-start; /* Alinea los ítems al inicio */
+}
+
+.shop .service-list li i {
+    color: #007bff; /* Color azul para el ícono (puedes cambiarlo) */
+    margin-right: 10px; /* Espacio entre el ícono y el texto */
+    font-size: 1.2em; /* Tamaño del ícono */
+    flex-shrink: 0; /* Evita que el ícono se encoja */
+}
+
+/* Estilos para las imágenes en la sección de servicios */
+.shop .shop_img img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px; /* Bordes ligeramente redondeados */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Sombra suave para un efecto 3D */
+    transition: transform 0.3s ease; /* Efecto hover */
+}
+
+.shop .shop_img img:hover {
+    transform: translateY(-5px); /* Pequeño levantamiento al pasar el mouse */
+}
+
+/* Estilos para el botón "Contactar Ahora" */
+.shop .btn-primary {
+    background-color: #007bff; /* Azul primario de Bootstrap */
+    border-color: #007bff;
+    padding: 12px 25px; /* Relleno del botón */
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 50px; /* Bordes redondeados para un look moderno */
+    transition: background-color 0.3s ease, border-color 0.3s ease, transform 0.3s ease;
+    display: block; /* Para que ocupe todo el ancho */
+    margin: 30px auto 0 auto; /* Centra el botón y da margen superior */
+    width: fit-content; /* Ajusta el ancho al contenido */
+}
+
+.shop .btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+    transform: translateY(-2px);
 }
